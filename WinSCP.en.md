@@ -1,7 +1,7 @@
 WinSCP have /rawconfig [option](https://winscp.net/eng/docs/rawconfig)   
-For call WinSCP from KeePass with options use url like:
+For call WinSCP from KeePass with parameters use url like:
 ```
-scp|winscp-http://serverIP/path?other options for WinSCP
+scp|winscp-http://serverIP/path?other parameters for WinSCP
 ```
 ### ex:
 ```
@@ -12,4 +12,4 @@ set URL override as: [WinSCPurlOverride](https://github.com/abakum/KeePassURLOve
 
 ##How it work:
 - replace first ```?``` of {URL:QUERY} with empty string: ```{T-REPLACE-RX:|{URL:QUERY}|^\?||}```
-- decode uri to command line for WinSCP: ```{T-CONV:`{T-REPLACE-RX:|{URL:QUERY}|^\?||}`Uri-Dec`}```
+- decode uri to command line parameters for WinSCP: ```{T-CONV:`{T-REPLACE-RX:|{URL:QUERY}|^\?||}`Uri-Dec`}```

@@ -5,8 +5,8 @@ KeePass URL Override for KiTTY and WinSCP
 - [Cyril as Cyd](https://github.com/cyd01/KiTTY) - for KiTTY
 - [Martin Přikryl](https://github.com/winscp/winscp) - for WinSCP
 ## Usage
-- Look [usage](https://github.com/abakum/KeePassURLOverride/blob/master/usage.eng.txt)
-- Смотри [использование](https://github.com/abakum/KeePassURLOverride/blob/master/usage.rus.txt)
+- Look usage [KiTTY](https://github.com/abakum/KeePassURLOverride/blob/master/KiTTY.en.md) [WinSCP](https://github.com/abakum/KeePassURLOverride/blob/master/WinSCP.en.md)
+- Смотри использование [KiTTY](https://github.com/abakum/KeePassURLOverride/blob/master/KiTTY.ru.md) [WinSCP](https://github.com/abakum/KeePassURLOverride/blob/master/WinSCP.ru.md)
 
 # KeePass URL Override for KiTTY
 KiTTY have -loginscript [option](http://www.9bis.net/kitty/#!pages/LogonScript.md)   
@@ -37,7 +37,7 @@ telnet://10.30.15.133/me:/{REF:U@T:tacacs}/rd:/{REF:P@T:tacacs}/>/su/rd:/{REF:P@
 ```
 tls://10.30.15.133/me:/{REF:U@T:tacacs}/rd:/{REF:P@T:tacacs}/>/su/rd:/{REF:P@U:apteka}/sy?-xpos 0 -ypos 0
 ```
-call kitty with login script:
+call KiTTY with login script:
 ```
 me:
 {REF:U@T:tacacs}
@@ -54,7 +54,7 @@ KeePass ignored {URL:QUERY} if {URL:SCM} is telnet, use tls instead telnet for t
 ```
 serial://com5:9600/me:/{REF:U@T:con0}/rd:/{REF:P@T:con0}/%23/conf t
 ```
-call kitty with login script:
+call KiTTY with login script:
 me:
 ```
 {REF:U@T:con0}

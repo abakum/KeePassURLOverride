@@ -1,0 +1,1 @@
+{CMD:>{APPDIR}{ENV_DIRSEP}..{ENV_DIRSEP}KiTTY{ENV_DIRSEP}kiTTY_portable.bat "{T-CONV:!{URL:SCM}!L!}" "{URL:HOST}" "{URL:PORT}" "{T-CONV:<{T-CONV:`{T-REPLACE-RX:\{T-REPLACE-RX:|{URL:PATH}|^/||}\/\%0D%0A\}`uri-dec`}<base64<}" "{USERNAME}" "{PASSWORD}" {T-CONV:`{T-REPLACE-RX:|{URL:QUERY}|^\?||}`Uri-Dec`}>WS=Max>}

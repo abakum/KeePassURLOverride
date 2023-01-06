@@ -57,8 +57,9 @@ conf t
 - используйте ```%2F``` для символа ```/``` в логин скрипте
 
 Если путь к portable_kitty.exe это ```KeePass\..\KiTTY\portable_kitty.exe```
-задайте URL override как: [KiTTYurlOverride](https://github.com/abakum/KeePassURLOverride/blob/main/KiTTYurlOverride)   
-и запишите в ```KeePass\..\KiTTY\portable_kitty.bat```: [KiTTY_portable.bat](https://github.com/abakum/KeePassURLOverride/blob/main/KiTTY_portable.bat)
+- запишите в ```KeePass\..\KiTTY\portable_kitty.bat```: [KiTTY_portable.bat](https://github.com/abakum/KeePassURLOverride/blob/main/KiTTY_portable.bat)
+- задайте URL override для rsa как: [KiTTYurlOverrideRSA](https://github.com/abakum/KeePassURLOverride/blob/main/KiTTYurlOverrideRSA)   
+- задайте URL override для ssh, telnet,tls, serial как: [KiTTYurlOverride](https://github.com/abakum/KeePassURLOverride/blob/main/KiTTYurlOverride)   
 
 ##Как это работает:
 - заменяет первый ```/``` в path пустой строкой: ```{T-REPLACE-RX:|{URL:PATH}|^/||}```

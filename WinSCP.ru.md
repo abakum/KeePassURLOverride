@@ -1,7 +1,7 @@
 WinSCP имеет  [опцию](https://winscp.net/eng/docs/rawconfig) /rawconfig   
 Чтоб вызвать WinSCP из KeePass с параметрами, укажите url типа этого:
 ```
-scp|winscp-http://serverIP/path?other parametrs for WinSCP
+sftp|ftp|ftps|ftpes|scp|winscp-http://serverIP/path?other parametrs for WinSCP
 ```
 ### Например:
 ```

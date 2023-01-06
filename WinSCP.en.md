@@ -1,7 +1,7 @@
 WinSCP have /rawconfig [option](https://winscp.net/eng/docs/rawconfig)   
 For call WinSCP from KeePass with parameters use url like:
 ```
-scp|winscp-http://serverIP/path?other parameters for WinSCP
+sftp|ftp|ftps|ftpes|scp|winscp-http://serverIP/path?other parameters for WinSCP
 ```
 ### ex:
 ```

@@ -57,8 +57,9 @@ where ```%23``` in path is uri encoded char ```#``` ({URL:PATH} must ended with 
 - use ```%2F``` for char ```/``` in login script
 
 If path to portable_kitty.exe is ```KeePass\..\KiTTY\portable_kitty.exe```
-set URL override as: [KiTTYurlOverride](https://github.com/abakum/KeePassURLOverride/blob/main/KiTTYurlOverride)   
-and write ```KeePass\..\KiTTY\portable_kitty.bat```: [KiTTY_portable.bat](https://github.com/abakum/KeePassURLOverride/blob/main/KiTTY_portable.bat)
+write ```KeePass\..\KiTTY\portable_kitty.bat```: [KiTTY_portable.bat](https://github.com/abakum/KeePassURLOverride/blob/main/KiTTY_portable.bat)
+set URL override for rsa as: [KiTTYurlOverrideRSA](https://github.com/abakum/KeePassURLOverride/blob/main/KiTTYurlOverrideRSA)   
+set URL override for ssh, telnet,tls, serial as: [KiTTYurlOverride](https://github.com/abakum/KeePassURLOverride/blob/main/KiTTYurlOverride)   
 
 ##How it work:
 - replace first ```/``` of path with empty string: ```{T-REPLACE-RX:|{URL:PATH}|^/||}```

@@ -8,3 +8,7 @@
 - Look usage [KiTTY](https://github.com/abakum/KeePassURLOverride/blob/master/KiTTY.en.md), [WinSCP](https://github.com/abakum/KeePassURLOverride/blob/master/WinSCP.en.md), [URL Override](https://winscp.net/eng/docs/integration_keepass)
 - Смотри использование [KiTTY](https://github.com/abakum/KeePassURLOverride/blob/master/KiTTY.ru.md), [WinSCP](https://github.com/abakum/KeePassURLOverride/blob/master/WinSCP.ru.md)
 ## ![ex:](https://github.com/abakum/KeePassURLOverride/blob/9ae20e8093a7aee2219dcffe462f33277c6d9a10/2023-01-03_15-56-01.png)
+## Usage2
+- Look usage2 [KiTTY](https://github.com/abakum/KeePassURLOverride/blob/master/KiTT.en.md)
+- Смотри использование2 [KiTTY](https://github.com/abakum/KeePassURLOverride/blob/master/KiTT.ru.md)
+## ![ex:](https://github.com/abakum/KeePassURLOverride/blob/37949001a5073a55a73767e41beb227de8319403/2023-01-08_19-39-54.png)

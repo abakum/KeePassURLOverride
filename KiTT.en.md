@@ -7,7 +7,7 @@ telne|tl|seria|ss|rs://serverIP/LoginScriptFile?other options for KiTTY
 ```
 telne://10.30.15.133/tMeSuSy
 ```
-where in KeePass\..\KiTTY\loginscript\tMeSuSy
+where in file ```KeePass\..\KiTTY\loginscript\tMeSuSy```
 ```
 me:
 {REF:U@T:tacacs}
@@ -26,7 +26,7 @@ If path to portable_kitty.exe is ```KeePass\..\KiTTY\portable_kitty.exe```
 - set URL override for ss, telne, tl, seria as: [KiTTYurlOverrid](https://github.com/abakum/KeePassURLOverride/blob/main/KiTTYurlOverrid)   
 
 ##How it work:
-- replace any ```/``` of path with {ENV_DIRSEP}: ```{T-REPLACE-RX:|{URL:PATH}|/|{ENV_DIRSEP}|}```
+- replace any ```/``` of {URL:PATH} with {ENV_DIRSEP}: ```{T-REPLACE-RX:|{URL:PATH}|/|{ENV_DIRSEP}|}```
 - get login script: ```{CMD:`findstr.exe x* {APPDIR}{ENV_DIRSEP}..{ENV_DIRSEP}kiTTY{ENV_DIRSEP}loginscript{T-REPLACE-RX:|{URL:PATH}|/|{ENV_DIRSEP}|}`M=C,WS=H`}```
 - encode login script to base64 string for pass to bat file as argument: ```"{T-CONV:<{CMD:`findstr.exe x* {APPDIR}{ENV_DIRSEP}..{ENV_DIRSEP}kiTTY{ENV_DIRSEP}loginscript{T-REPLACE-RX:|{URL:PATH}|/|{ENV_DIRSEP}|}`M=C,WS=H`}<base64<}"```
 - replace first ```?``` of query with empty string: ```{T-REPLACE-RX:|{URL:QUERY}|^\?||}```

@@ -7,7 +7,7 @@ telne|tl|seria|ss|rs://serverIP/LoginScriptFile?other options for KiTTY
 ```
 telne://10.30.15.133/tMeSuSy
 ```
-где в файле KeePass\..\KiTTY\loginscript\tMeSuSy
+где в файле ```KeePass\..\KiTTY\loginscript\tMeSuSy```
 ```
 me:
 {REF:U@T:tacacs}

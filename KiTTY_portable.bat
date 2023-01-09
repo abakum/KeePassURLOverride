@@ -15,13 +15,17 @@ set value=%~3
 set ls64=%~4
 set login=
 set password=
+if /i "%scm%"=="tl" set scm=tls
 if /i "%scm% %value%"=="tls -1" set value=23
 if /i "%scm%"=="tls" set scm=telnet
+if /i "%scm%"=="telne" set scm=telnet
 rem KeePass ignored {URL:QUERY} if "%scm%"=="telnet"
+if /i "%scm%"=="seria" set scm=serial
 if /i "%scm%"=="telnet" goto :nologin
 if /i "%scm%"=="serial" goto :nologin
 if "%~5"=="" goto :nologin
 set login=-l %~5
+if /i "%scm%"=="rs" set scm=rsa
 if /i "%scm%"=="rsa" goto :nopassword
 if "%~6"=="" goto :nopassword
 set password=-pass %~6

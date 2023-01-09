@@ -1,4 +1,4 @@
-setlocal enabledelayedexpansion
+SetLocal EnableExtensions EnableDelayedExpansion
 set args=
 set /a i=0
 for %%a in (%*) do (
@@ -15,23 +15,23 @@ set value=%~3
 set ls64=%~4
 set login=
 set password=
-if "%scm% %value%"=="tls -1" set value=23
-if "%scm%"=="tls" set scm=telnet
+if /i "%scm% %value%"=="tls -1" set value=23
+if /i "%scm%"=="tls" set scm=telnet
 rem KeePass ignored {URL:QUERY} if "%scm%"=="telnet"
-if "%scm%"=="telnet" goto :nologin
-if "%scm%"=="serial" goto :nologin
+if /i "%scm%"=="telnet" goto :nologin
+if /i "%scm%"=="serial" goto :nologin
 if "%~5"=="" goto :nologin
 set login=-l %~5
-if "%scm%"=="rsa" goto :nopassword
+if /i "%scm%"=="rsa" goto :nopassword
 if "%~6"=="" goto :nopassword
 set password=-pass %~6
 :nopassword
 :nologin
 set option=-P
-if "%scm%"=="serial" set option=-sercfg
-if "%scm% %value%"=="serial -1" set value=115200
-if "%scm%"=="rsa" set scm=ssh
-if "%scm% %value%"=="ssh -1" set value=22
+if /i "%scm%"=="serial" set option=-sercfg
+if /i "%scm% %value%"=="serial -1" set value=115200
+if /i "%scm%"=="rsa" set scm=ssh
+if /i "%scm% %value%"=="ssh -1" set value=22
 set port=%option% %value%
 set ls=
 if "%ls64%"=="" goto :start

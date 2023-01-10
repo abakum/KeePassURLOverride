@@ -12,3 +12,4 @@
 - Look usage2 [KiTTY](KiTT.en.md), [WinSCP](https://winscp.net/forum/viewtopic.php?p=115210#115210)  [WinSCPurlOverrideSite](WinSCPurlOverrideSite)
 - Смотри использование2 [KiTTY](KiTT.ru.md)
 ## ![ex:](2023-01-08_19-39-54.png)
+## ![ex:](2023-01-10_15-49-16.png)

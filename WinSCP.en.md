@@ -9,7 +9,7 @@ scp://10.161.115.160/etc/config/?/rawconfig Interface\Commander\LocalPanel\LastP
 ```
 If path to WinSCP.exe is ```KeePass\..\WinSCP\WinSCP.exe```
 set URL override for sftp, ftp, ftps, ftpes, scp, winscp-http as: [WinSCPurlOverride](WinSCPurlOverride)   
-or create in [Login window](https://winscp.net/eng/docs/ui_login) site ```{USERNAME}@{URL:HOST}``` and set URL override for winscp as: [WinSCPurlOverrideSite](WinSCPurlOverrideSite)   
+or create in [Login Dialog](https://winscp.net/eng/docs/ui_login) site ```{USERNAME}@{URL:HOST}``` and set URL override for winscp as: [WinSCPurlOverrideSite](WinSCPurlOverrideSite)   
 
 ##How it work:
 - replace first ```?``` of {URL:QUERY} with empty string: ```{T-REPLACE-RX:|{URL:QUERY}|^\?||}```
